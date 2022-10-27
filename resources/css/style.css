@@ -45,6 +45,11 @@ header {
   background-color: white;
 }
 
+header > .content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header .content {
   display: flex;
   align-items: center;
@@ -138,6 +143,8 @@ header .mobile {
 
 #sign-up-section {
   display: flex;
+  max-width: 1260px;
+  margin: 0 auto;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
@@ -187,12 +194,14 @@ header .mobile {
   padding-bottom: 0.75rem;
   font-size: 3.125rem;
   line-height: 1.4;
+  font-weight: 400;
 }
 
 #sign-up-cta .email {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
+  font-weight: 400;
 }
 
 #sign-up-cta .button {
@@ -254,33 +263,41 @@ header .mobile {
 
 #features-section {
   display: flex;
+  max-width: calc(1260px - 5%);
+  margin: 0 auto;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 2.5% 2.875rem;
   background-color: #f3f3f3;
 }
 
-.feature {
+.feature.left {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  margin-right: 19px;
+  background-color: white;
+}
+
+.feature.right {
+  flex: 1;
+  margin-left: 19px;
   background-color: white;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 32px auto 0px;
 }
 
 .feature h2 {
   padding-bottom: 0.5rem;
   font-size: 2.25rem;
+  line-height: (1.2);
   font-weight: bold;
   color: #4a4a4a;
 }
 
 .feature .content {
-  padding: 2.5rem 0;
+  padding: 40px 10px;
 }
 
 .feature h3 {
@@ -331,6 +348,8 @@ header .mobile {
 
 #filters-section {
   display: flex;
+  max-width: 1260px;
+  margin: 0 auto;
   flex-direction: column;
   padding: 4rem 0;
   background-color: #4a4a4a;
@@ -345,6 +364,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  line-height: 1.4;
 }
 
 #filters-section .content h3 {
@@ -401,6 +421,8 @@ header .mobile {
   align-items: center;
   justify-content: center;
   padding: 5rem 1.5rem;
+  margin: 0 auto;
+  max-width: calc(1260px - 3rem);
 }
 
 #quotes-section .quote {
@@ -456,16 +478,29 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  height: calc(62px - 3rem);
 }
 
 footer .content {
   color: white;
   display: flex;
   font-size: 0.75rem;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 footer .copyright {
   flex-grow: 1;
+  margin-left: 32px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer .location {
+  margin-right: 32px;
+  font-size: 12px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 760px) {
